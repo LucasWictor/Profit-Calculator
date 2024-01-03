@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Moms- och vinstkalkylator">
+    <meta name="keywords" content="VAT, profit, calculator">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/41c8b474e2.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Moms- och vinstkalkylator</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><i class="fas fa-calculator"></i> Moms- och vinstkalkylator</h1>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Moms- och vinstkalkylatorn</h1>
+            <p class="lead">Beräkna moms och vinst</p>
+
+            <form onsubmit="calculateTotal(); return false;">
+                <div class="input-group">
+                    <input type="text" id="priceInput" class="form-control" placeholder="Ange priset här" aria-label="Ange priset här" aria-describedby="calculate-button">
+                    <button class="btn btn-pink" type="submit" id="calculate-button">Beräkna!</button>
+                </div>
+            </form>
+            
+            <div id="result" class="text-white text-center result-box"></div>
+        </div>
+    </div>
+
+    <footer class="footer text-white text-center py-3">
+        <p>&copy; Moms- och vinstkalkylator.</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
